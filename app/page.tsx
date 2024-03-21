@@ -3,21 +3,8 @@ import Image from "next/image";
 import Stats from "./stats";
 import Home from "./Home";
 // import About from "./About";
-// import Team from "./Team";
 import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 // import About from "./About";
-
-// const teamData = [
-//   {
-//     name: "Jaya Singh",
-//     role: "GDSC LEAD 2023-2024 RCOEM",
-//     socialMedia: [
-//       { name: "Instagram", icon: <FaInstagram size={24} /> },
-//       { name: "Twitter", icon: <FaTwitter size={24} /> },
-//       { name: "LinkedIn", icon: <FaLinkedin size={24} /> },
-//     ],
-//   },
-// ];
 
 export default function Page() {
   return (
@@ -28,7 +15,6 @@ export default function Page() {
         </div>
       </nav>
       <Home />
-{/*       <Team teamData={teamData} /> */}
     </>
   );
 }
