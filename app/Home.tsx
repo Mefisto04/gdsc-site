@@ -76,7 +76,7 @@ export default function Home() {
             Catch this year's keynotes, technical sessions, and on-demand
             learning sessions.
           </p>
-          <button className="bg-green-600 rounded-lg p-2 sm:p-4 text-lg sm:text-xl border-2 rounded-sm border-black text-black">
+          <button className="bg-green-600 rounded-xl p-2 sm:p-4 text-lg sm:text-xl border-2  border-black text-black">
             Join Community
           </button>
         </div>
@@ -84,7 +84,7 @@ export default function Home() {
           <p className="text-2xl sm:text-4xl mb-2 sm:mb-4">
             Get to know <br className="sm:hidden" /> the Team
           </p>
-          <button className="bg-blue-600 rounded-lg p-2 sm:p-4 text-lg sm:text-xl border-2 rounded-sm border-black">
+          <button className="bg-blue-600 rounded-xl p-2 sm:p-4 text-lg sm:text-xl border-2  border-black">
             Explore Team
           </button>
         </div>

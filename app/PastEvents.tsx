@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Image1 from "../public/team.svg";
+import Team from "./Team";
 
 const PastEvents = () => {
   const events = [
@@ -76,6 +77,7 @@ const PastEvents = () => {
           ))}
         </div>
       </div>
+      <Team />
     </>
   );
 };
