@@ -3,8 +3,27 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import Slider from 'react-slick';
 
+interface TeamMember {
+  Name: string;
+  pos: string;
+  img: string;
+}
+
+interface Teams {
+  [key: string]: TeamMember[]; // Index signature to allow any string as key
+}
+
+interface Teams {
+  lead: TeamMember[];
+  cp: TeamMember[];
+  web: TeamMember[];
+  management: TeamMember[];
+  social: TeamMember[];
+  design: TeamMember[];
+}
+
 function Team() {
-  const teams = {
+  const teams: Teams = {
     lead: [
       {
         Name: 'Jaya Singh',
@@ -84,7 +103,7 @@ function Team() {
     ],
   };
 
-  const [selectedTeam, setSelectedTeam] = useState('cp'); // Default to 'cp' for demo
+  const [selectedTeam, setSelectedTeam] = useState<string>('cp'); // Default to 'cp' for demo
 
   const settings = {
     dots: true,
@@ -113,7 +132,7 @@ function Team() {
     ],
   };
 
-  const renderTeamMembers = (team) => {
+  const renderTeamMembers = (team: string) => {
     const combinedTeam = [...teams.lead, ...teams[team]];
     return (
       <div>
